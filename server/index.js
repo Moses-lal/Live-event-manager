@@ -14,16 +14,43 @@ import cors from "cors";
 const app = express();
 const httpServer = createServer(app);
 
+
+
+
+
+
+
+
 // Socket.IO setup
+const CLIENT_URL = process.env.CLIENT_URL || "http://localhost:5173";
+
 const io = new Server(httpServer, {
   cors: {
-    origin: "http://localhost:5173",
-    methods: ["GET", "POST"]
-  }
+    origin: CLIENT_URL,
+    methods: ["GET", "POST"],
+    credentials: true,
+  },
 });
 
+
+
+
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(
+  cors({
+    origin: CLIENT_URL,
+    credentials: true,
+  })
+);
+
+
+
+
+
+
+
+
+
 
 // attach io to every request so controllers can use it
 app.use((req, res, next) => {
