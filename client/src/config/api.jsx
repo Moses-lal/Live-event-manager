@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "/",
+  baseURL: "https://live-event-manager.onrender.com",
   withCredentials: true,
 });
 
