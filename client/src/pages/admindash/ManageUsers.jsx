@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import api from "../../config/api";
 import toast from "react-hot-toast";
-import { useAuth } from "../../context/authcontext";
+import { useAuth } from "../../context/AuthContext";
 
 const ManageUsers = () => {
   const { user: currentUser } = useAuth();
