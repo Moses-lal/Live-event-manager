@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { useAuth } from "../context/authcontext";
+import { useAuth } from "../context/AuthContext";
 import toast from "react-hot-toast";
 
 const AdminLayout = ({ children }) => {
