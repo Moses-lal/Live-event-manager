@@ -14,7 +14,7 @@ import AdminHome from "./pages/admindash/AdminHome";
 import ProtectedRoute from "./components/Protectedroute";
 import ManageEvents from "./pages/admindash/ManageEvents";
 import ManageUsers from "./pages/admindash/ManageUsers";
-import AllBookings from "./pages/admindash/AllBookings";
+import AllBookings from "./pages/admindash/Allbookings";
 import BrowseEvents from "./pages/userdash/BrowseEvents";
 import BookEvent from "./pages/userdash/bookevents";
 import MyBookings from "./pages/userdash/Mybookings";
